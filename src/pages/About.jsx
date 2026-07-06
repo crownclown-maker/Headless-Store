@@ -6,7 +6,7 @@ export function About() {
     <div className="page about">
       <div className="page-head">
         <p className="eyebrow">Our story</p>
-        <h1>About</h1>
+        <h1>Test</h1>
       </div>
 
       <div className="about-body">
