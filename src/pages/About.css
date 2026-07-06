@@ -1,0 +1,23 @@
+.about-body {
+  max-width: 60ch;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.about-body p {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.about-body p:first-child::first-letter {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  float: left;
+  line-height: 0.85;
+  padding-right: 0.35rem;
+  padding-top: 0.3rem;
+  color: var(--clay);
+}

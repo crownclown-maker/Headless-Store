@@ -1,0 +1,77 @@
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--ink);
+}
+
+.logo svg {
+  color: var(--clay);
+  flex-shrink: 0;
+}
+
+.main-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-nav a {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  position: relative;
+  padding-bottom: 0.3rem;
+  transition: color 0.15s ease;
+}
+
+.main-nav a:hover {
+  color: var(--ink);
+}
+
+.main-nav a.active {
+  color: var(--clay-dark);
+}
+
+.main-nav a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: var(--clay);
+  border-radius: 2px;
+}
+
+@media (max-width: 640px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 0.85rem;
+    align-items: flex-start;
+  }
+  .main-nav {
+    gap: 1.25rem;
+  }
+}

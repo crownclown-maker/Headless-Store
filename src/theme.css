@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap');
+
+:root {
+  /* Warm/earthy palette — moss & clay, not the cliché cream+terracotta */
+  --bg: #EDE6D6;          /* warm parchment, olive-leaning */
+  --bg-raised: #F5F0E4;   /* card surface, slightly lighter */
+  --ink: #2E2A22;         /* deep warm charcoal-brown */
+  --ink-soft: #6B6455;    /* muted body text */
+  --clay: #A85C32;        /* rust-brown primary accent */
+  --clay-dark: #8A4A28;   /* hover state */
+  --moss: #5F6B4A;        /* olive secondary accent */
+  --gold: #C69749;        /* ochre highlight */
+  --line: #D8CBB0;        /* hairline borders */
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Work Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: var(--clay);
+  color: var(--bg-raised);
+}
+
+:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
